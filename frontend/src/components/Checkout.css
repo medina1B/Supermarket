@@ -1,0 +1,155 @@
+.checkout-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fefefc;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.checkout-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #2a7f3e; /* green */
+  margin-bottom: 20px;
+}
+
+.checkout-section {
+  margin-bottom: 20px;
+}
+
+.checkout-section h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2a7f3e;
+}
+
+.checkout-section label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #2a7f3e;
+}
+
+.checkout-item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.checkout-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-name {
+  font-weight: bold;
+}
+
+.item-qty {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.item-total {
+  font-weight: bold;
+  color: #2a7f3e;
+}
+
+.checkout-summary {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #2a7f3e;
+}
+
+.promo-input {
+  display: flex;
+}
+
+.promo-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px 0 0 6px;
+}
+
+.promo-input button {
+  background-color: #f1c40f; /* yellow */
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+}
+
+.promo-input button:hover {
+  background-color: #d4ac0d;
+}
+
+.checkout-section input,
+.checkout-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.checkout-section textarea {
+  resize: none;
+  height: 60px;
+}
+
+.breakdown {
+  background: #f5f7f3;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.breakdown-row.total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2a7f3e;
+}
+
+.breakdown hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 8px 0;
+}
+
+.btn-confirm {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #2a7f3e, #f1c40f); /* green to yellow */
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-confirm:hover {
+  opacity: 0.9;
+}

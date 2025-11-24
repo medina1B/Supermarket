@@ -1,0 +1,113 @@
+/* Card container */
+.auth-card {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #fffbe6; /* soft yellow */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  padding: 30px 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* Heading */
+.auth-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #2f855a; /* green */
+  margin-bottom: 25px;
+}
+
+/* Error message */
+.auth-card .error-message {
+  color: #d69e2e; /* golden yellow */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Form fields */
+.auth-card form input {
+  width: 95%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #c6f6d5; /* soft green border */
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.auth-card form input:focus {
+  border-color: #68d391; /* bright green */
+  box-shadow: 0 0 10px rgba(104, 211, 145, 0.4);
+  outline: none;
+}
+
+/* Buttons */
+.auth-card form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #68d391, #f6e05e); /* green to yellow */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-card form button:hover {
+  background: linear-gradient(90deg, #52b788, #ecc94b);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Footer links */
+.auth-card p {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.auth-card p a {
+  color: #68d391; /* green link */
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-card p a:hover {
+  text-decoration: underline;
+}
+
+/* Add subtle card background decoration */
+.auth-card::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(104, 211, 145, 0.1); /* green blur */
+  top: -50px;
+  right: -50px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.auth-card::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(246, 224, 94, 0.15); /* yellow blur */
+  bottom: -40px;
+  left: -40px;
+  border-radius: 50%;
+  z-index: -1;
+}

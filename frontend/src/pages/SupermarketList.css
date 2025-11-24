@@ -1,0 +1,83 @@
+.supermarket-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 20px;
+}
+
+.supermarket-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #2f855a; /* green */
+  margin-bottom: 25px;
+}
+
+/* Search Bar */
+.supermarket-search {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 2px solid #d69e2e; /* yellow border */
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+/* Grid layout for cards */
+.supermarket-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Single card */
+.supermarket-card {
+  background: #fef9e7; /* soft yellow */
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.supermarket-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.2);
+}
+
+/* Image styling */
+.supermarket-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Card content */
+.supermarket-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2f855a; /* green */
+  margin: 10px 0 5px 0;
+  padding: 0 10px;
+}
+
+.supermarket-card p {
+  font-size: 14px;
+  color: #4a5568;
+  padding: 0 10px 5px 10px;
+}
+
+.supermarket-card .rating {
+  font-weight: 600;
+  color: #d69e2e; /* golden yellow */
+  padding: 0 10px 10px 10px;
+}
+
+/* No supermarkets message */
+.no-supermarkets {
+  text-align: center;
+  color: #2f855a;
+  font-weight: 600;
+  margin-top: 40px;
+  font-size: 16px;
+}
