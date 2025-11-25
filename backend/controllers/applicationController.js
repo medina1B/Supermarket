@@ -1,4 +1,4 @@
-import Application from "../models/application.js";
+import application from "../models/application.js;";
 import cloudinary from "../utils/cloudinary.js";
 
 // Add a new application
@@ -38,7 +38,7 @@ export const addApplication = async (req, res) => {
         .json({ message: "Image upload failed", error: err.message });
     }
 
-    const newApplication = new Application({
+    const newApplication = new application({
       name,
       description,
       category,
