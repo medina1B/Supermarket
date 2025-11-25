@@ -1,0 +1,15 @@
+{
+  "name": "shopping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev --prefix backend",
+    "admin": "npm run dev --prefix admin",
+    "build": "npm install --prefix backend && npm install --prefix admin && npm run build --prefix admin",
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medina1B/Supermarket.git"
+  }
+}
