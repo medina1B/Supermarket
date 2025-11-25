@@ -1,4 +1,4 @@
-import application from "../models/application.js;";
+import application from "../models/application.js";
 import cloudinary from "../utils/cloudinary.js";
 
 // Add a new application
